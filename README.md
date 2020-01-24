@@ -1,3 +1,9 @@
+# Instalar SDK Watson no projeto em sua máquina
+```shell
+npm install --save express watson-developer-cloud body-parser
+```
+### Talvez seja necessario remover a pasta `node_modules`.
+
 # Watson sample chatbot
 
 A simple chatbot using IBM Watson and Node.js
