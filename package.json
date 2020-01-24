@@ -1,0 +1,16 @@
+{
+  "name": "br.com.vrsoft",
+  "version": "1.0.0",
+  "description": "VRWikiBot Node API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omega 7",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "watson-developer-cloud": "^4.0.1"
+  }
+}
