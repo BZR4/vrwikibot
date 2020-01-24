@@ -9,6 +9,7 @@ app.use(express.static('./public'));
 
 const port = 3000;
 
+async(rep, res) => {
   const AssistantV2 = require('ibm-watson/assistant/v2');
   const { IamAuthenticator } = require('ibm-watson/auth');
 
@@ -25,6 +26,10 @@ const port = 3000;
   });
 
   let sessionId = createSession.result.session_id;
+
+  console.log('SessionID: ');
+  console.log(sessionId);
+}
 
   app.post('/conversation/', (req, res) => {
     const { text, context = {} } = req.body;
@@ -50,5 +55,6 @@ const port = 3000;
     const { text } = req.params;
     res.json(text);
   });
+
 
 app.listen(port, () => console.log(`Running on port ${port}`));

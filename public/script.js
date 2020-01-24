@@ -37,7 +37,7 @@ const getWatsonMessageAndInsertTemplate = async (text = '') => {
   const template = templateChatMessage(response.output.text, 'watson');
 
   InsertTemplateInTheChat(template);
-}
+};
 
 textInput.addEventListener('keydown', (event) => {
   if (event.keyCode === 13 && textInput.value) {

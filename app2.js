@@ -7,9 +7,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static('./public'));
 
-const port = 3000;
+const port = 4200;
 
-async(rep, res) => {
   const AssistantV1= require('ibm-watson/assistant/v1');
 
   var assistant = new AssistantV1({
@@ -36,6 +35,6 @@ async(rep, res) => {
       }
     });
   });
-}
+
 
 app.listen(port, () => console.log(`Running on port ${port}`));
